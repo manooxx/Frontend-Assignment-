@@ -13,7 +13,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
   return (
     <ThemeProvider>
-      <div className="flex font-poppins bg-blue-100 dark:bg-black dark:text-white">
+      <div className="flex font-poppins bg-blue-100 dark:bg-black min-h-screen dark:text-white">
         {/* <Sidebar /> */}
         <motion.div 
           className="flex-1 flex flex-col"
@@ -22,7 +22,7 @@ const App = () => {
           transition={{ duration: 1 }}
         >
          <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          <div className="px-6 space-y-1">
+          <div className="md:px-6 px-2 space-y-1">
           <Dashboard searchTerm={searchTerm} />
             
             

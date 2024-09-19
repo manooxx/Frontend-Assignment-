@@ -48,17 +48,17 @@ const Dashboard = ({ searchTerm }) => {
   }));
 
   return (
-    <div className="p-6">
+    <div className="py-4 p-2 md:py-0 md:p-6">
       <AllCategories openScrollUp={openScrollUp} />
 
       {filteredCategories.map((category) => (
         <div key={category.id} className="mb-10">
-          <h2 className="text-lg mb-4">{category.categoryName}</h2>
-          <div className="grid grid-cols-3 gap-6">
+          <h2 className="text-sm md:text-lg mb-4">{category.categoryName}</h2>
+          <div className="grid md:grid-cols-3 gap-2 md:gap-6">
             {category.widgets.map((widget) => (
               <motion.div
                 key={widget.id}
-                className='bg-white dark:bg-gray-900 shadow-lg rounded-lg p-4 relative '
+                className='bg-white dark:bg-gray-900 shadow-lg rounded-lg p-4  relative '
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 100 }}
               >

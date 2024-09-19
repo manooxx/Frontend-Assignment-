@@ -22,8 +22,8 @@ const Header = ({ searchTerm, setSearchTerm }) => {
         <div className='w-10 h-10'>
           <img src="logo.png" alt="Logo" />
         </div>
-        <div>
-          <h2 className='dark:text-gray-200 font-semibold text-gray-800'>Dashboard</h2>
+        <div className='hidden md:block'>
+          <h2 className=' dark:text-gray-200 font-semibold text-gray-800'>Dashboard</h2>
         </div>
       </div>
      
@@ -33,7 +33,7 @@ const Header = ({ searchTerm, setSearchTerm }) => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className='border rounded-full h-9 w-60 flex items-center justify-between p-3 bg-gray-100'>
+        <div className='border rounded-full h-9  md:w-60 flex items-center justify-between p-3 bg-gray-100'>
           <input 
             className='outline-none h-9 text-gray-800 rounded-full bg-gray-100' 
             type="text" 
@@ -54,9 +54,9 @@ const Header = ({ searchTerm, setSearchTerm }) => {
           </motion.span>
         </div>
         
-        <p className="font-semibold flex items-center gap-1 text-gray-800 dark:text-gray-200">
+        <div className="hidden  font-semibold md:flex items-center gap-1 text-gray-800 dark:text-gray-200">
           <span className='text-lg'><FaCircleUser /></span> Login
-        </p>
+        </div>
       </motion.div>
     </motion.header>
   );
