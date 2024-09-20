@@ -56,7 +56,7 @@ const SmoothScrollUp = ({ onClose }) => {
             animate={{ y: 0 }}
             exit={{ y: '100vh' }}
             transition={{ type: 'spring', stiffness: 70, damping: 20 }}
-            className="fixed right-0 top-0 dark:bg-[#0F0F0F] text-sm shadow-lg bg-white dark:text-white text-black flex flex-col w-1/2 h-full"
+            className="fixed right-0 top-0 dark:bg-[#0F0F0F] text-sm shadow-lg bg-white dark:text-white text-black flex flex-col md:w-1/2 h-full"
         >
             <div className="flex justify-between p-4 dark:bg-[#232D3F] text-white items-center mb-4 bg-blue-800">
                 <h3>Add Widgets</h3>

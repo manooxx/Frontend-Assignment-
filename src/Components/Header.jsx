@@ -16,7 +16,7 @@ const Header = ({ searchTerm, setSearchTerm }) => {
       initial={{ y: -100 }} 
       animate={{ y: 0 }} 
       transition={{ type: 'spring', stiffness: 60 }} 
-      className="bg-white dark:bg-gray-900 shadow px-10 p-2 flex justify-between items-center"
+      className="bg-white dark:bg-gray-900 shadow px-3 md:px-10 p-2 flex justify-between items-center"
     >
       <div className='flex gap-4 items-center'>
         <div className='w-10 h-10'>
@@ -35,7 +35,7 @@ const Header = ({ searchTerm, setSearchTerm }) => {
       >
         <div className='border rounded-full h-9  md:w-60 flex items-center justify-between p-3 bg-gray-100'>
           <input 
-            className='outline-none h-9 text-gray-800 rounded-full bg-gray-100' 
+            className='outline-none w-[80px] md:w-[190px]  md:h-9 text-gray-800 rounded-full bg-gray-100' 
             type="text" 
             placeholder='Search Widget'
             value={searchTerm}

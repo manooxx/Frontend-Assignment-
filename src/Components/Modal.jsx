@@ -29,7 +29,7 @@ const Modal = ({ isOpen, onClose, categoryId }) => {
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 mx-3 md:mx-0 md:w-2/5"
+            className="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 mx-3 md:mx-0  md:w-2/5"
             initial={{ scale: 0.8, opacity: 0, y: -50 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.8, opacity: 0, y: -50 }}
@@ -39,13 +39,13 @@ const Modal = ({ isOpen, onClose, categoryId }) => {
             <input
               type="text"
               placeholder="Widget Name"
-              className="border border-blue-300 p-2 mb-4 w-full rounded"
+              className="border dark:text-black border-blue-300 p-2 mb-4 w-full rounded"
               value={widgetName}
               onChange={(e) => setWidgetName(e.target.value)}
             />
             <textarea
               placeholder="Widget Text"
-              className="border border-blue-300 p-2 w-full rounded mb-4"
+              className="border border-blue-300 dark:text-black p-2 w-full rounded mb-4"
               value={widgetText}
               onChange={(e) => setWidgetText(e.target.value)}
             />
